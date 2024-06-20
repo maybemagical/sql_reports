@@ -1,0 +1,33 @@
+-- Retrieve table
+select * from students
+-- Filter exact date
+select name,joiningdate from students
+where joiningdate = '2022-09-23'
+-- Filter date greater or lesser
+select name,joiningdate from students
+where joiningdate >= '2022-09-23'
+--Filter date between range
+select name,joiningdate from students
+where joiningdate 
+between '2022-06-15' and '2022-07-03'
+--Filter dates range using AND
+select name,joiningdate from students
+where joiningdate >= '2022-02-08' 
+and joiningdate <= '2022-10-12'
+-- Select years from date columns
+select name,
+extract(year from "enddate") as "joiningdate"
+from students
+--Filter dates of specific year
+select name,joiningdate
+from students
+where extract(year from "enddate") = '2022'
+--Filter dates of specific month
+select name,joiningdate
+from students
+where extract(month from "enddate") = '10'
+-- Filter by date difference
+select name,joiningdate
+from students
+where extract(year from "joiningdate") = '2022'
+
