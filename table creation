@@ -1,0 +1,13 @@
+create table  canditates (name varchar, id integer,email varchar, city varchar)
+select * from canditates 
+
+alter table canditates add column gender integer
+select * from canditates 
+
+alter table canditates alter column gender type varchar
+select * from canditates 
+
+alter table canditates drop column gender
+select * from canditates 
+
+drop table canditates 
