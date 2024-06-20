@@ -1,0 +1,4 @@
+SELECT CAR ||'('||ORIGIN||')' FROM CARS
+SELECT CAR ||'='|| MPG as mpg  FROM CARS 
+select car , weight * 1000 as "weight(grams)"from cars 
+select car, mpg/cylinders as "mpg/cyl" from cars

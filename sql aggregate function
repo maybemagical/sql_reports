@@ -1,0 +1,9 @@
+select avg(weight)as avg_weight from cars
+select max(cylinders)as max_cyl from cars
+select max(mpg)as max_mpg from cars
+select count(origin)as total_rows from cars 
+select sum("mpg") from cars
+select count(model)from cars
+select count(accelaration)from cars
+select car, mpg from cars where mpg=(select max(mpg)from cars)
+select count(distinct("origin"))from cars
