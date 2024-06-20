@@ -1,0 +1,3 @@
+select id from course
+select id from course orderby 
+select duration, course from course 
