@@ -1,0 +1,6 @@
+select car from cars order by cars
+select car from cars order by cylinders
+select car,mpg,cylinders,displacement from cars order by mpg,cylinders
+select car , cylinders,horsepower from cars order by 2,3
+select car,mpg,cylinders,displacement from cars order by mpg asc
+select car, mpg,cylinders,displacement from cars order by 2,3 desc
