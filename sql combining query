@@ -1,0 +1,16 @@
+select distinct(cylinders) from cars where weight>2000
+select cars,cylinders,weight from cars where cylinders in (select distinct(cylinders)from cars where weight>2000)
+order by weight desc
+select cars,cylinders,weight from cars
+	where cylinders in(select distinct(cylinders)from cars 
+	where weight in (select min(weight)from cars where origin = 'japan'))order by weight desc
+
+select car, cylinders from cars where cylinders = 6
+union 
+select car, cylinders from cars where origin in ('japan','europe')
+
+select car, cylinders from cars where cylinders=6
+union 
+select car, cylinders from cars where origin in ('japan','europe')
+order by cylinders desc
+
