@@ -1,0 +1,24 @@
+-- WHERE CLAUSE
+select car,mpg,weight,origin
+from cars
+where "origin"= 'Japan'
+
+-- FILTERING BY SINGLE CONDITION
+select car,mpg,weight
+from cars
+where weight>3000
+
+--FILTERING BY NON MATCHES
+select car,horsepower,mpg
+from cars
+where "mpg"<> 14
+
+--FILTERING RANGE OF VALUES
+select car, horsepower,model,weight
+from cars
+where "weight" between 3000 and 4000
+
+--FILTERING NULL VALUES
+select horsepower,origin
+from cars
+where "horsepower" IS null

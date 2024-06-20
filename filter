@@ -1,0 +1,12 @@
+select car,cylinders,mpg
+from cars
+order by 2,3
+select horsepower,model,origin
+from cars
+order by "origin" desc, 2 asc
+select "car","mpg","cylinders","weight"
+from cars
+order by "mpg" asc
+select car,mpg,weight
+from cars
+where origin= 'japan'
