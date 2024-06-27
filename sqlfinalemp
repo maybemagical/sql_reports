@@ -1,0 +1,16 @@
+select * from finalemp
+
+	-- write a query to find the numvers of jobs available in the employees table
+select count(distinct(dept)) as jobs from finalemp
+
+    -- write a query to get the total salaries payable to employees 
+select sum(salary) as total_salary from finalemp
+
+    -- write a query to get the minimum salary from employees table
+select min(salary) as minsalary from finalemp 
+
+    -- write a query to get the maximum salary of an enployee working as programmer
+select max(salary) from finalemp where dept= 'IT_PROG' 
+
+    -- write a query to get the average salary and number of employees working in the department which is ID is 90
+select avg(salary) , count(*)from finalemp where dept_id='50'
